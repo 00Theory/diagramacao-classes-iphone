@@ -3,29 +3,32 @@ package Recursos.Telefone;
 import java.util.Scanner;
 
 public class AppTelefone implements Telefone{
-
-
     Scanner sc = new Scanner(System.in);
+
     @Override
-    public void ligar(String nome, String numero) {
-        System.out.println("Ligando para " + nome + ", número: " + numero);
+    public void ligar() {
+        System.out.println("Qual o número?");
+        String numero = sc.nextLine();
+        System.out.println("Ligando para " + numero);
     }
 
     @Override
     public void atender() {
 
-        
-        String atender = sc.next();
+        System.out.println("Digite S para atender ou N para desligar e aperte Enter");
+        String atender = sc.nextLine();
+        String atendido = "S";
+        String desligado = "N";
 
-        if (atender == "S"){
+        if (atender.equals(atendido)){
             System.out.println("Atendido");
-            sc.close();
+        }
+        else if (atender.equals(desligado)){
+            System.out.println("Desligado");
         }
         else{
-            System.out.println("Desligado");
-            sc.close();
+            atender();
         }
-        
     }
 
     @Override
