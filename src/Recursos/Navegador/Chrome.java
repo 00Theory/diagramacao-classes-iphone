@@ -6,7 +6,6 @@ public class Chrome implements Navegador{
 
     Scanner sc = new Scanner(System.in);
 
-    
     @Override
     public void exibirPagina() {
         System.out.println("Exibindo página...");
@@ -24,7 +23,7 @@ public class Chrome implements Navegador{
 
     @Override
     public void pesquisar() {
-        
+        System.out.println("Chrome: Pesquisar ou digitar endereço");
         String pesquisa = sc.nextLine();
         System.out.println("Pesquisando por " + pesquisa);
     }

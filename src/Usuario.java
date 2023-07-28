@@ -1,3 +1,5 @@
+import Recursos.ReprodutorMusical.Musicas;
+import Recursos.ReprodutorMusical.ReprodutorMusical;
 import Recursos.Telefone.AppTelefone;
 
 
@@ -7,5 +9,9 @@ public class Usuario {
 
         tele.ligar();
         tele.atender();
+        
+        Musicas reproMusica = new Musicas();
+        reproMusica.selecionarMusica("");
+
     }
 }

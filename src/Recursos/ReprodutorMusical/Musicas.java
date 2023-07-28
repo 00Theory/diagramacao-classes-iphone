@@ -4,20 +4,17 @@ public class Musicas implements ReprodutorMusical{
 
     @Override
     public void tocar() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'tocar'");
+        System.out.println("Tocando...");
     }
 
     @Override
     public void pausar() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'pausar'");
+        System.out.println("Pause");
     }
 
     @Override
-    public void selecionarMusica() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'selecionarMusica'");
+    public void selecionarMusica(String musica) {
+        System.out.println(musica + " selecionada");
     }
     
 }

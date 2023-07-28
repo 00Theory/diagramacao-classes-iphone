@@ -1,6 +1,10 @@
 package Recursos.Navegador;
 
+import java.util.Scanner;
+
 public class Safari implements Navegador{
+
+    Scanner sc = new Scanner(System.in);
 
     @Override
     public void exibirPagina() {
@@ -18,6 +22,13 @@ public class Safari implements Navegador{
     public void atualizarPagina() {
         // TODO Auto-generated method stub
         throw new UnsupportedOperationException("Unimplemented method 'atualizarPagina'");
+    }
+
+    @Override
+    public void pesquisar() {
+        System.out.println("Safari: Faça uma pesquisa");
+        String pesquisa = sc.nextLine();
+        System.out.println("Pesquisando por " + pesquisa);
     }
     
 }
