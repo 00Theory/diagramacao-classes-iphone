@@ -1,8 +1,9 @@
+import Recursos.Navegador.Chrome;
 import Recursos.ReprodutorMusical.Musicas;
 import Recursos.Telefone.AppTelefone;
 
 
-public class Usuario {
+public class UsuarioIPhone {
     public static void main(String[] args) {
         AppTelefone tele = new AppTelefone();
 
@@ -14,6 +15,10 @@ public class Usuario {
         reproMusica.pausar();
         reproMusica.tocar();
 
-        
+        Chrome chrome = new Chrome();
+        chrome.pesquisar();
+        chrome.atualizarPagina();
+        chrome.adicionarNovaAba();
+        chrome.pesquisar();
     }
 }

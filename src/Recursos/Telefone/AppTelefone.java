@@ -7,7 +7,7 @@ public class AppTelefone implements Telefone{
 
     @Override
     public void ligar() {
-        System.out.println("Qual o número?");
+        System.out.println("Ligar para qual o número?");
         String numero = sc.nextLine();
         System.out.println("Ligando para " + numero);
     }
@@ -25,6 +25,7 @@ public class AppTelefone implements Telefone{
         }
         else if (atender.equals(desligado)){
             System.out.println("Desligado");
+            iniciarCorreioVoz();
         }
         else{
             atender();
