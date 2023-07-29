@@ -8,20 +8,17 @@ public class Safari implements Navegador{
 
     @Override
     public void exibirPagina() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'exibirPagina'");
+        System.out.println("Exibindo página...");
     }
 
     @Override
     public void adicionarNovaAba() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'adicionarNovaAba'");
+        System.out.println("Nova Aba");
     }
 
     @Override
     public void atualizarPagina() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'atualizarPagina'");
+        System.out.println("Página Atualizada");
     }
 
     @Override

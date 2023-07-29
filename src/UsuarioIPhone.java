@@ -1,4 +1,5 @@
 import Recursos.Navegador.Chrome;
+import Recursos.Navegador.Safari;
 import Recursos.ReprodutorMusical.Musicas;
 import Recursos.Telefone.AppTelefone;
 
@@ -20,5 +21,11 @@ public class UsuarioIPhone {
         chrome.atualizarPagina();
         chrome.adicionarNovaAba();
         chrome.pesquisar();
+
+        Safari safari = new Safari();
+        safari.pesquisar();
+        safari.atualizarPagina();
+        safari.adicionarNovaAba();
+        safari.pesquisar();
     }
 }
